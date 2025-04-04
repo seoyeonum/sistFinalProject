@@ -68,7 +68,76 @@
         {
         	display: flex;
         }
-    
+        
+        .withdraw.info.body ul > li
+        {
+        	list-style: circle;
+        }
+        
+        .withdraw.info.head
+        {
+        	background-color: #f4cccc;
+        	width: 80%;
+        	border-radius: 10px;
+        	height: 6%;
+        }
+        
+        h2
+        {
+        	padding: 1%;
+        }
+        
+        .body
+        {
+        	font-size: 16pt;
+        }
+        
+        /* 버튼 */
+        .withdrawBtn
+        {
+        	font-size: 16pt;
+        	background-color: #f4cccc; 
+        	border: 2px solid #ea9999;
+        	border-radius: 10px;
+        	margin-left: 5px;
+        }
+        
+        .withdrawBtn:hover
+        {
+        	background-color: #ea9999;
+        	border: 2px solid #f4cccc;
+        }
+        
+        .withdrawBtn:active
+        {
+        	color: #ea9999;
+        	background-color: #f4cccc; 
+        	border: 2px solid #ea9999;
+        }
+        
+        .resetBtn
+        {
+        	font-size: 16pt;
+        	background-color: #eeeeee; 
+        	border: 2px solid black;
+        	border-radius: 10px;
+        	margin-right: 5px;
+        }
+        
+        .resetBtn:hover
+        {
+        	background-color: #bcbcbc;
+        	border: 2px solid black;
+        }
+        
+        .resetBtn:active
+        {
+        	color: #ffffff;
+        	background-color: #bcbcbc; 
+        	border: 2px solid #eeeeee;
+        }
+        
+      
 </style>
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -101,13 +170,13 @@
 			<ul class="side-menu" >
 				<li><a href="">시터 마이 페이지</a>
 					<ul>
-						<li><a href="" >개인정보 수정</a></li>
-						<li><a href="">등급 확인</a></li>
+						<li><a href="SitterinfoList.jsp" >개인정보 수정</a></li>
+						<li><a href="GradesCheck.jsp">등급 확인</a></li>
 						<li><a href="">근무 등록</a></li>
-						<li><a href="">근무 등록 내역 확인</a></li>
-						<li><a href="">돌봄 제공 내역 확인</a></li>
-						<li><a href="">돌봄 완료 내역 확인</a></li>
-						<li><a href="" style="font-weight: bold; color: #1AB223">회원 탈퇴</a></li>
+						<li><a href="GenRegList.jsp" >근무 등록 내역 확인</a></li>
+						<li><a href="SitterGenReqAnsweredList.jsp" >돌봄 제공 내역 확인</a></li>
+						<li><a href="CareCompleteList.jsp" >돌봄 완료 내역 확인</a></li>
+						<li><a href="SitterWithdrawed.jsp" style="font-weight: bold; color: #1AB223">회원 탈퇴</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -115,43 +184,49 @@
 	</div>
 	
 	<div class="withdraw info container">
-		<div class="withdraw info head" >
-		<h2 style="background-color: #f4cccc; width: 80%; border-radius: 10px;">시터 회원 탈퇴 안내</h2>
+		<div class="withdraw info head" style="">
+		<h2>시터 회원 탈퇴 안내</h2>
 		</div> <!-- .withdraw .info .head -->
 		<div class="withdraw info body">
-		고객님께서 탈퇴를 원하시다니 저희의 서비스가 많이 부족했나 봅니다. 불편하거나 답답했던 이유를 말씀해주신다면 확인하고 최대한 반영하도록 하겠습니다. <br />
+		고객님께서 탈퇴를 원하시다니 저희의 서비스가 많이 부족했나 봅니다.<br />
+		불편하거나 답답했던 이유를 말씀해주신다면 확인하고 최대한 반영하도록 하겠습니다. <br />
 		시터님께서 어디를 가시든 응원하겠습니다.
 		</div> 
 		
 		<div class="withdraw info head" >
-		<h2 style="background-color: #f4cccc; width: 80%; border-radius: 10px;">정말로 탈퇴하시겠습니까?</h2>
+		<h2>정말로 탈퇴하시겠습니까?</h2>
 		</div>
 			<div class="withdraw info body">
-			삭제되는 정보는 다음과 같습니다.
+			탈퇴하신다 해도 개인정보는 즉시 사라지지 않습니다. <br />
+			또한 시터님이 쌓아오신 돌봄 기록 역시 남아 다음 기록을 기다릴 것입니다. <br /> 
+			개인정보는 3년 후 삭제됩니다. 삭제되는 정보는 다음과 같습니다.
 			<ul>
-				<li>ㅁ</li>
-				<li>ㄴ</li>
-				<li>ㅇ</li>
-				<li>ㄹ</li>
+				<li>비밀번호</li>
+				<li>이름</li>
+				<li>주민번호</li>
+				<li>전화번호</li>
+				<li>주소</li>
+				<li>상세주소</li>
+				<li>우편번호</li>
+				<li>사진</li>
 			</ul>
 			유지되는 정보는 다음과 같습니다. 
 			<ul>
-				<li>ㅁ</li>
-				<li>ㄴ</li>
-				<li>ㅇ</li>
-				<li>ㄹ</li>
+				<li>아이디</li>
+				<li>활동 기록</li>
+				<li>시터 신청 날짜</li>
+				<li>시터 승인 일자</li>
 			</ul>
 			</div> 
 			
-		<form action="" class="">
-		비밀번호 입력: <input type="password" />
+		<form action="" class="" style="font-size: 16pt;">
+		비밀번호 입력: <input type="password" style="border-color: white"/>
 		
-		<div class="withdraw info button" style="display: flex; flex-direction: row-reverse;">
-		<button class="withdrawBtn" type="submit" style="background-color: black; color: white;">탈퇴하기</button> <button class="withdrawBtn" type="reset">취소</button>
+		<div class="withdraw info button" style="display: flex; flex-direction: row-reverse; margin-top: 20px; margin-right: 20%;">
+		<button class="withdrawBtn" type="submit" >탈퇴하기</button> <button class="resetBtn" type="reset">취소</button>
 		</div>
 		</form>
 	</div>
-	
 </div>
 
 

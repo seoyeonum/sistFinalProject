@@ -143,13 +143,13 @@
 			<ul class="side-menu" >
 				<li><a href="">시터 마이 페이지</a>
 					<ul>
-						<li><a href="" style="font-weight: bold; color: #1AB223">개인정보 수정</a></li>
-						<li><a href="">등급 확인</a></li>
+						<li><a href="SitterinfoList.jsp" style="font-weight: bold; color: #1AB223">개인정보 수정</a></li>
+						<li><a href="GradesCheck.jsp">등급 확인</a></li>
 						<li><a href="">근무 등록</a></li>
-						<li><a href="">근무 등록 내역 확인</a></li>
-						<li><a href="">돌봄 제공 내역 확인</a></li>
-						<li><a href="">돌봄 완료 내역 확인</a></li>
-						<li><a href="">회원 탈퇴</a></li>
+						<li><a href="GenRegList.jsp" >근무 등록 내역 확인</a></li>
+						<li><a href="SitterGenReqAnsweredList.jsp">돌봄 제공 내역 확인</a></li>
+						<li><a href="CareCompleteList.jsp" >돌봄 완료 내역 확인</a></li>
+						<li><a href="SitterWithdrawed.jsp">회원 탈퇴</a></li>
 					</ul>
 				</li>
 			</ul>
