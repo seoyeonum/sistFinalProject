@@ -19,22 +19,59 @@
 	}
 	
 	/* 사이드 바 */
-	.main .container
-	{
-		display: flex;
-	}
-	
 	.side-bar-container
 	{
 		align-content: center;
+		margin-top: 2%; 
+		margin-left: -20%;
+		margin-right: 5%;
+		margin-bottom: 10%;
 	}
 	
 	.side-bar
 	{
-		margin-left: -40px;
+		width: 330px;
+		border: 2px solid #ea9999;
+		border-radius: 10px;
+		background-color: white;
 	}
 	
-	.side-menu
+	.side-bar ul
+	{
+		margin-bottom: 0;
+	}
+      
+	.side-bar ul > li > a 
+	{
+		display: block;
+		color: black;
+		font-size: 1.4rem;
+		font-weight: bold;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 50px;
+		padding-right: 10px; 
+		font-family: 'NoonnuBasicGothicRegular';
+	}
+      
+	.side-menu ul, li
+	{
+		list-style: none;
+	}
+	
+	.side-menu a:hover
+	{
+		color: #ea9999;
+		border-radius: 10px;
+		text-decoration: underline;
+	}
+	
+	.side-menu a
+	{
+		text-decoration: none;
+	}
+	
+	.side-menu 
 	{
 		padding-left: 0px;
 		width: 300px;
@@ -125,11 +162,11 @@
             </div>
             <nav>
                 <button type="button" class="menuBtn presentPage">홈</button>
-                <button type="button" class="menuBtn">로그아웃</button>
                 <button type="button" class="menuBtn">스케줄러</button>
                 <button type="button" class="menuBtn">긴급돌봄서비스</button>
                 <button type="button" class="menuBtn">마이페이지</button>
                 <button type="button" class="menuBtn">알림함</button>
+                <button type="button" class="menuBtn">로그아웃</button>
             </nav>
         </header>
 	</div>
@@ -149,7 +186,7 @@
 						<li><a href="GenRegList.jsp" >근무 등록 내역 확인</a></li>
 						<li><a href="SitterGenReqAnsweredList.jsp">돌봄 제공 내역 확인</a></li>
 						<li><a href="CareCompleteList.jsp" >돌봄 완료 내역 확인</a></li>
-						<li><a href="SitterWithdrawed.jsp">회원 탈퇴</a></li>
+						<li><a href="SitterWithdraw.jsp">회원 탈퇴</a></li>
 					</ul>
 				</li>
 			</ul>

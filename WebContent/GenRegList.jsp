@@ -27,17 +27,56 @@
 	.side-bar-container
 	{
 		align-content: center;
+		margin-top: 2%; 
+		margin-left: -20%;
+		margin-right: 5%;
 		margin-bottom: 10%;
-		margin-top: 10%; 
-		
 	}
 	
 	.side-bar
 	{
-		margin-left: -40px;
+		width: 330px;
+		border: 2px solid #ea9999;
+		border-radius: 10px;
+		background-color: white;
 	}
 	
-	.side-menu
+	.side-bar ul
+	{
+		margin-bottom: 0;
+	}
+      
+	.side-bar ul > li > a 
+	{
+		display: block;
+		color: black;
+		font-size: 1.4rem;
+		font-weight: bold;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 50px;
+		padding-right: 10px; 
+		font-family: 'NoonnuBasicGothicRegular';
+	}
+      
+	.side-menu ul, li
+	{
+		list-style: none;
+	}
+	
+	.side-menu a:hover
+	{
+		color: #ea9999;
+		border-radius: 10px;
+		text-decoration: underline;
+	}
+	
+	.side-menu a
+	{
+		text-decoration: none;
+	}
+	
+	.side-menu 
 	{
 		padding-left: 0px;
 		width: 300px;
@@ -87,10 +126,6 @@
 	.content-container
 	{
 		font-size: 14pt;
-	}
-	
-	.content-container
-	{
 		text-wrap: wrap;
 	}
 	
@@ -222,19 +257,19 @@
 		</div>
 		<nav>
 			<button type="button" class="menuBtn presentPage" onclick="">홈</button>
-			<button type="button" class="menuBtn"
-				onclick="window.location.href='./project/projectLogin.html'">로그아웃</button>
 			<button type="button" class="menuBtn">스케줄러</button>
 			<button type="button" class="menuBtn">일반돌봄서비스</button>
 			<button type="button" class="menuBtn">마이페이지</button>
 			<button type="button" class="menuBtn" onclick="moveAlarm()">알림함</button>
+			<button type="button" class="menuBtn"
+				onclick="window.location.href='./project/projectLogin.html'">로그아웃</button>
 		</nav>
 	</header>
 </div>
 
 <main>
 <!-- 메인 컨테이너 -->
-<div class="main container" style="display: flex; max-width: 1500px; width: 100%;">
+<div class="main container" style="display: flex;">
 
 	<!-- 사이드 바 컨테이너 -->
 	<div class="side-bar-container" >
@@ -248,7 +283,7 @@
 						<li><a href="GenRegList.jsp" style="font-weight: bold; color: #1AB223">근무 등록 내역 확인</a></li>
 						<li><a href="SitterGenReqAnsweredList.jsp">돌봄 제공 내역 확인</a></li>
 						<li><a href="CareCompleteList.jsp" >돌봄 완료 내역 확인</a></li>
-						<li><a href="SitterWithdrawed.jsp">회원 탈퇴</a></li>
+						<li><a href="SitterWithdraw.jsp">회원 탈퇴</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -258,7 +293,7 @@
 	<!-- 근무 등록 내역 컨테이너 -->
 	<div class="content-container" style="max-width: 1200px; width: 100%;">
 		<div style="font-size: 24pt; margin: 20px 10px 10px 0px; text-align: left;">근무 등록 내역 확인</div>
-		<div style="font-size: 20pt; text-align: left;">
+		<div style="font-size: 20pt; text-align: left; margin-bottom: 10px;">
 		시터님께서 최근에 올리신 근무 등록 내역을 확인합니다. <br />
 		보호자님이 시터님의 근무 등록에 예약하시면 근무 등록은 수정/삭제가 불가능합니다. <br /></div>
 		<div id="reservation info" style="margin-bottom:10px; margin-left: -30px; margin-right: auto; ">

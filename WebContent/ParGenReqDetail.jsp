@@ -20,10 +20,9 @@
 		display: block;
 	}
 	
-	.main.container
+	.main .container
 	{
-		margin-top: 10%;
-		margin-bottom: 10%;
+		
 	}
 	
 	.parent.info
@@ -49,10 +48,11 @@
 
 </style>
 </head>
-<body style="max-width: 500px; max-height: 900px;">
+<body style="max-width: 500px; max-height: 950px;">
 <main>
 
-<div class="main container">
+<div class="main container" style="margin-top: 10%;
+		margin-bottom: 20%;">
 	<table class="parent info">
 		<tbody class="info tbody">
 			<tr>

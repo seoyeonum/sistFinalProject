@@ -166,11 +166,11 @@
             </div>
             <nav>
                 <button type="button" class="menuBtn presentPage">홈</button>
-                <button type="button" class="menuBtn">로그아웃</button>
                 <button type="button" class="menuBtn">스케줄러</button>
                 <button type="button" class="menuBtn">긴급돌봄서비스</button>
                 <button type="button" class="menuBtn">마이페이지</button>
                 <button type="button" class="menuBtn">알림함</button>
+                <button type="button" class="menuBtn">로그아웃</button>
             </nav>
         </header>
 	</div>

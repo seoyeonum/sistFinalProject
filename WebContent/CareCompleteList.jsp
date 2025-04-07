@@ -22,17 +22,56 @@
 	.side-bar-container
 	{
 		align-content: center;
+		margin-top: 2%; 
+		margin-left: -20%;
+		margin-right: 5%;
 		margin-bottom: 10%;
-		margin-top: 10%; 
-		
 	}
 	
 	.side-bar
 	{
-		margin-left: -40px;
+		width: 330px;
+		border: 2px solid #ea9999;
+		border-radius: 10px;
+		background-color: white;
 	}
 	
-	.side-menu
+	.side-bar ul
+	{
+		margin-bottom: 0;
+	}
+      
+	.side-bar ul > li > a 
+	{
+		display: block;
+		color: black;
+		font-size: 1.4rem;
+		font-weight: bold;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 50px;
+		padding-right: 10px; 
+		font-family: 'NoonnuBasicGothicRegular';
+	}
+      
+	.side-menu ul, li
+	{
+		list-style: none;
+	}
+	
+	.side-menu a:hover
+	{
+		color: #ea9999;
+		border-radius: 10px;
+		text-decoration: underline;
+	}
+	
+	.side-menu a
+	{
+		text-decoration: none;
+	}
+	
+	.side-menu 
 	{
 		padding-left: 0px;
 		width: 300px;
@@ -67,7 +106,7 @@
 	
 	
 	/* 테이블 */
-	.content-container, .reservation-table
+	.reservation
 	{
 		text-align: center;
 	}
@@ -75,11 +114,8 @@
 	.content-container
 	{
 		font-size: 14pt;
-	}
-	
-	.content-container
-	{
 		text-wrap: wrap;
+		width: 150%;
 	}
 	
 	.reservation
@@ -130,11 +166,11 @@
             </div>
             <nav>
                 <button type="button" class="menuBtn presentPage">홈</button>
-                <button type="button" class="menuBtn">로그아웃</button>
                 <button type="button" class="menuBtn">스케줄러</button>
                 <button type="button" class="menuBtn">긴급돌봄서비스</button>
                 <button type="button" class="menuBtn">마이페이지</button>
                 <button type="button" class="menuBtn">알림함</button>
+                <button type="button" class="menuBtn">로그아웃</button>
             </nav>
         </header>
 </div>
@@ -152,7 +188,7 @@
 						<li><a href="GenRegList.jsp">근무 등록 내역 확인</a></li>
 						<li><a href="SitterGenReqAnsweredList.jsp">돌봄 제공 내역 확인</a></li>
 						<li><a href="CareCompleteList.jsp" style="font-weight: bold; color: #1AB223">돌봄 완료 내역 확인</a></li>
-						<li><a href="SitterWithdrawed.jsp">회원 탈퇴</a></li>
+						<li><a href="SitterWithdraw.jsp">회원 탈퇴</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -161,14 +197,14 @@
 	
 	<div class="content-container" >
 	
-		<div class="subject" style="font-size: 36pt; margin: 30px;">돌봄 완료 내역 리스트</div>
+		<div class="subject" style="font-size: 24pt; margin: 30px;">돌봄 완료 내역 리스트</div>
 		<div class="subsubject" style="font-size: 18pt; margin: 10px 10px 10px 10px;">
 		시터님이 돌봄을 완료하신 리스트를 시간 제한 없이 보여드립니다. <br />
 		무한히 확인 가능합니다. 
 		</div>
 		
 		<div class="reservation table" style="margin-left: -10px;">
-			<div class="reservation thead" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+			<div class="reservation thead" style="border-top-left-radius: 10px; border-top-right-radius: 10px; width: inherit;">
 				<div class="row">
 					<div class="col-md-1">번호</div>
 					<div class="col-md-2">예약 신청 날짜</div>
@@ -179,13 +215,13 @@
 					<div class="col-md-2">상세 정보</div>
 				</div>   
 			</div>
-			<div class="reservation tbody" style="padding: 10px 0;">
+			<div class="reservation tbody" style="padding: 10px 0; width: inherit;">
 				<div class="row" id="number1">
 					<div class="col-md-1">1</div>
 					<div class="col-md-2">2025.03.30</div>
 					<div class="col-md-2">04.06 ~ 04.07</div>
-					<div class="col-md-2">강남구</div>
-					<div class="col-md-1">남아</div>
+					<div class="col-md-1">강남구</div>
+					<div class="col-md-2">남아</div>
 					<div class="col-md-2">3세</div>
 					<div class="col-md-2"><button class="reservation-btn" value="1">상세 정보</button></div>
 				</div>
@@ -193,8 +229,8 @@
 					<div class="col-md-1">2</div>
 					<div class="col-md-2">2025.03.28</div>
 					<div class="col-md-2">04.01 ~ 04.05</div>
-					<div class="col-md-2">동작구</div>
-					<div class="col-md-1">여아</div>
+					<div class="col-md-1">동작구</div>
+					<div class="col-md-2">여아</div>
 					<div class="col-md-2">4세</div>
 					<div class="col-md-2"><button class="reservation-btn" value="2">상세 정보</button></div>
 				</div>
@@ -202,8 +238,8 @@
 					<div class="col-md-1">3</div>
 					<div class="col-md-2">2024.03.20</div>
 					<div class="col-md-2">03.25 ~ 03.30</div>
-					<div class="col-md-2">동작구</div>
-					<div class="col-md-1">남아</div>
+					<div class="col-md-1">동작구</div>
+					<div class="col-md-2">남아</div>
 					<div class="col-md-2">1세</div>
 					<div class="col-md-2"><button class="reservation-btn" value="3">상세 정보</button></div>
 				</div>

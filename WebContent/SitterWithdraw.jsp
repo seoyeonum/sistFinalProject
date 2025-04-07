@@ -13,130 +13,149 @@
 <link rel="stylesheet" type="text/css" href="<%=cp %>/css/ILookCSS.css">
 <style type="text/css">
 
-		div
-		{
-			font-family: 'NoonnuBasicGothicRegular';
-		}
+	div
+	{
+		font-family: 'NoonnuBasicGothicRegular';
+	}
 		
-		/* 사이드 바 */
-		.side-bar-container
-		{
-			margin-top: 10%;
-			margin-bottom: 10%;
-		}
-		
-        .side-bar
-        {
-        	margin-left: -40px;
-        }
+	/* 사이드 바 */
+	.side-bar-container
+	{
+		align-content: center;
+		margin-top: 2%; 
+		margin-left: 0%;
+		margin-right: 5%;
+		margin-bottom: 10%;
+	}
+	
+	.side-bar
+	{
+		width: 330px;
+		border: 2px solid #ea9999;
+		border-radius: 10px;
+		background-color: white;
+	}
+	
+	.side-bar ul
+	{
+		margin-bottom: 0;
+	}
+      
+	.side-bar ul > li > a 
+	{
+		display: block;
+		color: black;
+		font-size: 1.4rem;
+		font-weight: bold;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 50px;
+		padding-right: 10px; 
+		font-family: 'NoonnuBasicGothicRegular';
+	}
+      
+	.side-menu ul, li
+	{
+		list-style: none;
+	}
+	
+	.side-menu a:hover
+	{
+		color: #ea9999;
+		border-radius: 10px;
+		text-decoration: underline;
+	}
+	
+	.side-menu a
+	{
+		text-decoration: none;
+	}
+	
+	.side-menu 
+	{
+		padding-left: 0px;
+		width: 300px;
+	}
         
-        .side-bar ul
-        {
-        	margin-bottom: 0;
-        }
-        
-        .side-bar ul > li > a 
-        {
-		  display: block;
-		  color: black;
-		  font-size: 1.4rem;
-		  font-weight: bold;
-		  padding-top: 20px;
-		  padding-bottom: 20px;
-		  padding-left: 50px;
-		  padding-right: 10px; 
-		  font-family: 'NoonnuBasicGothicRegular';
-		}
-        
-        .side-menu ul, li
-        {
-        	list-style: none;
-        }
-        
-        .side-menu a:hover
-        {
-        	background-color: #FFB6C1;
-        }
-        
-        .side-menu a
-        {
-        	text-decoration: none;
-        }
-        
-        /* 메인 콘텐츠 */
-        .main .content
-        {
-        	display: flex;
-        }
-        
-        .withdraw.info.body ul > li
-        {
-        	list-style: circle;
-        }
-        
-        .withdraw.info.head
-        {
-        	background-color: #f4cccc;
-        	width: 80%;
-        	border-radius: 10px;
-        	height: 6%;
-        }
-        
-        h2
-        {
-        	padding: 1%;
-        }
-        
-        .body
-        {
-        	font-size: 16pt;
-        }
-        
-        /* 버튼 */
-        .withdrawBtn
-        {
-        	font-size: 16pt;
-        	background-color: #f4cccc; 
-        	border: 2px solid #ea9999;
-        	border-radius: 10px;
-        	margin-left: 5px;
-        }
-        
-        .withdrawBtn:hover
-        {
-        	background-color: #ea9999;
-        	border: 2px solid #f4cccc;
-        }
-        
-        .withdrawBtn:active
-        {
-        	color: #ea9999;
-        	background-color: #f4cccc; 
-        	border: 2px solid #ea9999;
-        }
-        
-        .resetBtn
-        {
-        	font-size: 16pt;
-        	background-color: #eeeeee; 
-        	border: 2px solid black;
-        	border-radius: 10px;
-        	margin-right: 5px;
-        }
-        
-        .resetBtn:hover
-        {
-        	background-color: #bcbcbc;
-        	border: 2px solid black;
-        }
-        
-        .resetBtn:active
-        {
-        	color: #ffffff;
-        	background-color: #bcbcbc; 
-        	border: 2px solid #eeeeee;
-        }
-        
+	/* 메인 콘텐츠 */
+	.main .content
+	{
+		display: flex;
+	}
+	
+	.withdraw.info.body
+	{
+		margin-top: 1%;
+	}
+	
+	.withdraw.info.body ul > li
+	{
+		list-style: circle;
+	}
+	
+	.withdraw.info.head
+	{
+		background-color: #f4cccc;
+		width: 80%;
+		border-radius: 10px;
+		height: 6%;
+	}
+	
+	h2
+	{
+		padding: 1%;
+	}
+	
+	.body
+	{
+		font-size: 16pt;
+	}
+	
+	/* 버튼 */
+	.withdrawBtn
+	{
+		font-size: 16pt;
+		background-color: #f4cccc; 
+		border: 2px solid #ea9999;
+		border-radius: 10px;
+		margin-left: 5px;
+	}
+	
+	.withdrawBtn:hover
+	{
+		background-color: #ea9999;
+		border: 2px solid #f4cccc;
+	}
+	
+	.withdrawBtn:active
+	{
+		color: #ea9999;
+		background-color: #f4cccc; 
+		border: 2px solid #ea9999;
+	}
+	
+	.resetBtn
+	{
+		font-size: 16pt;
+		background-color: #eeeeee; 
+		border: 2px solid black;
+		border-radius: 10px;
+		margin-right: 5px;
+	}
+	
+	.resetBtn:hover
+	{
+		background-color: #bcbcbc;
+		border: 2px solid black;
+	}
+	
+	.resetBtn:active
+	{
+		color: #ffffff;
+		background-color: #bcbcbc; 
+		border: 2px solid #eeeeee;
+	}
+
       
 </style>
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
@@ -154,11 +173,11 @@
            </div>
            <nav>
                <button type="button" class="menuBtn presentPage">홈</button>
-               <button type="button" class="menuBtn">로그아웃</button>
                <button type="button" class="menuBtn">스케줄러</button>
                <button type="button" class="menuBtn">긴급돌봄서비스</button>
                <button type="button" class="menuBtn">마이페이지</button>
                <button type="button" class="menuBtn">알림함</button>
+               <button type="button" class="menuBtn">로그아웃</button>
            </nav>
        </header>
 </div>
@@ -176,7 +195,7 @@
 						<li><a href="GenRegList.jsp" >근무 등록 내역 확인</a></li>
 						<li><a href="SitterGenReqAnsweredList.jsp" >돌봄 제공 내역 확인</a></li>
 						<li><a href="CareCompleteList.jsp" >돌봄 완료 내역 확인</a></li>
-						<li><a href="SitterWithdrawed.jsp" style="font-weight: bold; color: #1AB223">회원 탈퇴</a></li>
+						<li><a href="SitterWithdraw.jsp" style="font-weight: bold; color: #1AB223">회원 탈퇴</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -220,8 +239,12 @@
 			</div> 
 			
 		<form action="" class="" style="font-size: 16pt;">
-		비밀번호 입력: <input type="password" style="border-color: white"/>
-		
+		비밀번호 입력: <input type="password" style="border-color: white"/><br />
+		탈퇴 사유<br />
+		<label>입금이 늦다. <input type="checkbox" /></label><br />
+		매칭 시스템이 마음에 들지 않았다. <input type="checkbox" /><br />
+		<input type="checkbox" />
+		<input type="checkbox" />
 		<div class="withdraw info button" style="display: flex; flex-direction: row-reverse; margin-top: 20px; margin-right: 20%;">
 		<button class="withdrawBtn" type="submit" >탈퇴하기</button> <button class="resetBtn" type="reset">취소</button>
 		</div>
