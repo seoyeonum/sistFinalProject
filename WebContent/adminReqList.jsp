@@ -47,6 +47,7 @@
 								<option value="confirmed">예약 확정</option>
 								<option value="completed">예약 완료</option>
 								<option value="canceled">예약 취소</option>
+								<option value="canceled">예약 삭제</option>
 							</select>
 						</div>
 
