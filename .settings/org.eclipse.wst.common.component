@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
+    <wb-module deploy-name="FinalProject_ILOOK">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="FinalProject_ILOOK"/>
+        <property name="java-output-path" value="/FinalProject_ILOOK/build/classes"/>
+=======
     <wb-module deploy-name="Team1">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="Team1"/>
         <property name="java-output-path" value="/Team1/build/classes"/>
+>>>>>>> 355ad602facb550f77fb6ab6582e655ec5f3929e
     </wb-module>
 </project-modules>
