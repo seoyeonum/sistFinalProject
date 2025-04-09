@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 /build/
 /.settings/
+=======
+# Eclipse specific files
+/.settings/
+/build/
+>>>>>>> 5e68d8fda661124beb3c43c2377a8b2d38a7018f
